@@ -18,7 +18,20 @@ export default defineConfig({
         orientation: "portrait-primary",
         start_url: "/",
         icons: [
-          // PNG preferido para instalabilidade Chrome/Android (adicione os arquivos em public/icons/)
+          // SVG (já no repo) — instalável agora
+          {
+            src: "/icons/icon-192.svg",
+            sizes: "192x192",
+            type: "image/svg+xml",
+            purpose: "any",
+          },
+          {
+            src: "/icons/icon-512.svg",
+            sizes: "512x512",
+            type: "image/svg+xml",
+            purpose: "any",
+          },
+          // PNG (adicione os arquivos em public/icons/ para máxima compatibilidade Chrome/Android)
           {
             src: "/icons/icon-192.png",
             sizes: "192x192",
@@ -36,19 +49,6 @@ export default defineConfig({
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
-          },
-          // Fallback SVG (já existentes)
-          {
-            src: "/icons/icon-192.svg",
-            sizes: "192x192",
-            type: "image/svg+xml",
-            purpose: "any",
-          },
-          {
-            src: "/icons/icon-512.svg",
-            sizes: "512x512",
-            type: "image/svg+xml",
-            purpose: "any",
           },
         ],
       },
