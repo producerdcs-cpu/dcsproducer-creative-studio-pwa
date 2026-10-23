@@ -30,7 +30,7 @@ export function GateStatus() {
           { label: "Scaffold PWA", status: "OK" },
           { label: "Evidence Pack", status: "OK" },
           { label: "Deploy público", status: "BLOQUEADO" },
-          { label: "Ícones 192/512", status: "PENDING" },
+          { label: "Ícones 192/512", status: "OK" },
         ]}
       />
     </div>
