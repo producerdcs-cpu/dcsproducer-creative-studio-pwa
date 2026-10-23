@@ -29,7 +29,7 @@ export function GateStatus() {
           { label: "Definition of Done", status: "OK" },
           { label: "Scaffold PWA", status: "OK" },
           { label: "Evidence Pack", status: "OK" },
-          { label: "Deploy público", status: "BLOQUEADO" },
+          { label: "Deploy público", status: "OK" },
           { label: "Ícones 192/512", status: "OK" },
         ]}
       />
