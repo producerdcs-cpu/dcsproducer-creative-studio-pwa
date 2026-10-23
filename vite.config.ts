@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "icons/*.svg"],
+      includeAssets: ["favicon.svg", "icons/*.{svg,png}"],
       manifest: {
         name: "DcsProducer® Creative Studio",
         short_name: "Creative Studio",
@@ -18,6 +18,26 @@ export default defineConfig({
         orientation: "portrait-primary",
         start_url: "/",
         icons: [
+          // PNG preferido para instalabilidade Chrome/Android (adicione os arquivos em public/icons/)
+          {
+            src: "/icons/icon-192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/icons/icon-512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any",
+          },
+          {
+            src: "/icons/icon-512-maskable.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
+          },
+          // Fallback SVG (já existentes)
           {
             src: "/icons/icon-192.svg",
             sizes: "192x192",
